@@ -2,112 +2,105 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>项目展示首页</title>
+		<link rel="icon" href="static/img/favicon.ico">
+		<link href="static/uiframe/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+		<link href="static/uiframe/bootstrap4/examples/album/album.css" rel="stylesheet">
+		<link href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
+
 	<body>
-		<div class="container" style="padding-top:55px;">
-			<div class="row clearfix">
-				<div class="col-md-12 column">
-					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-						<div class="navbar-header">
-							 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavigation"> 
-							 	<span class="sr-only">Toggle navigation</span>
-							 	<span class="icon-bar"></span>
-							 	<span class="icon-bar"></span>
-							 	<span class="icon-bar"></span>
-							 </button> 
-							 <a class="navbar-brand" href="javascript:;" style="margin:0px 20px 0px 130px;">个人博客</a>
-						</div>
-						<div class="collapse navbar-collapse" id="mynavigation">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="javascript:;">主页</a></li>
-								<li><a href="javascript:;">文章</a></li>
-								<li><a href="javascript:;">收藏</a></li>
-								<li><a href="javascript:;">相册</a></li>
-								<li><a href="javascript:;">音乐</a></li>
-							</ul>
-							<form class="navbar-form navbar-left" role="search" >
-								<div class="input-group">
-							      	<input type="text" class="form-control" placeholder="Search for...">
-							      	<span class="input-group-btn">
-							        	<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span> 搜索</button>
-							      	</span>
-							    </div>
-							</form>
-						</div>
-					</nav>
+	<header>
+		<div class="collapse bg-dark" id="navbarHeader">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-7 py-4">
+						<h4 class="text-white">Template</h4>
+						<p class="text-muted">Example Template for Bootstrap</p>
+						<p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+					</div>
+					<div class="col-sm-4 offset-md-1 py-4">
+						<h4 class="text-white">Contact</h4>
+						<ul class="list-unstyled">
+							<li><a href="#" class="text-white">Follow on Twitter</a></li>
+							<li><a href="#" class="text-white">Like on Facebook</a></li>
+							<li><a href="#" class="text-white">Email me</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="row clearfix">
-				<div class="col-md-3 column">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<span class="glyphicon glyphicon-user"></span> 博主信息
-							</h3>
-						</div>
-						<div class="panel-body text-center">
-							<img alt="140x140" src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/140/140/default.jpg" class="img-thumbnail" />
-							<h4>姓名</h4>
-							<p>这里是个性签名，随便说点话吧，这里是个性签名，随便说点话吧</p>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<span class="glyphicon glyphicon-user"></span> 按发布分类
-							</h3>
-						</div>
-						<div class="panel-body" style="padding: 0px;">
-							<ul class="nav nav-stacked nav-pills">
-								<li><a href="javascript:;">情感生活</a></li>
-								<li><a href="javascript:;">我的工作</a></li>
-								<li><a href="javascript:;">我的学习</a></li>
-								<li><a href="javascript:;">旅游见闻</a></li>
-								<li><a href="javascript:;">游戏人生</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<span class="glyphicon glyphicon-calendar"></span> 按发布日期
-							</h3>
-						</div>
-						<div class="panel-body" style="padding: 0px;">
-							<ul class="nav nav-stacked nav-pills">
-								<li><a href="javascript:;">2017年05月18 <span class="badge">14</span></a></li>
-								<li><a href="javascript:;">2017年03月14 <span class="badge">14</span></a></li>
-								<li><a href="javascript:;">2017年02月12 <span class="badge">14</span></a></li>
-								<li><a href="javascript:;">2017年01月28 <span class="badge">14</span></a></li>
-								<li><a href="javascript:;">2017年01月28 <span class="badge">14</span></a></li>
-								<li><a href="javascript:;">2016年12月15 <span class="badge">14</span></a></li>
-								<li><a href="javascript:;">2016年10月28 <span class="badge">14</span></a></li>
-								<li><a href="javascript:;">2016年07月10 <span class="badge">14</span></a></li>
-								<li><a href="javascript:;">2016年06月14 <span class="badge">14</span></a></li>
-								<li><a href="javascript:;">2016年06月11 <span class="badge">14</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-9 column">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<span class="glyphicon glyphicon-th-list"></span> 最新博客
-							</h3>
-						</div>
-						<div class="panel-body">
-							
+		</div>
+		<div class="navbar navbar-dark bg-dark box-shadow">
+			<div class="container d-flex justify-content-between">
+				<a href="#" class="navbar-brand d-flex align-items-center">
+					<i class="fa fa-camera fa-lg fa-fw"></i> <strong>Template</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main role="main">
+
+		<section class="jumbotron text-center">
+			<div class="container">
+				<h1 class="jumbotron-heading">Example Template</h1>
+				<p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+				<p>
+					<a href="#" class="btn btn-primary my-2">Main call to action</a>
+					<a href="#" class="btn btn-secondary my-2">Secondary action</a>
+				</p>
+			</div>
+		</section>
+		<div class="album py-5 bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card mb-4 box-shadow">
+							<a href="html/iloveu.html" target="_blank" style="height: 260px;overflow: hidden;">
+								<img class="card-img-top" src="static/img/1.jpg" alt="小姐姐我有话想对你说..">
+							</a>
+							<div class="card-body">
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<a href="html/iloveu.html" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+										<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+									</div>
+									<small class="text-muted">9 mins</small>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--<a class="btn btn-default" href="">进入后台</a>
-		<a class="btn btn-default" href="">登录</a>-->
-		<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" ></script>
-		<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+	</main>
+
+	<footer class="text-muted">
+		<div class="container">
+			<p class="float-right">
+				<a href="#"><i class="fa fa-arrow-up fa-lg fa-fw" aria-hidden="true"></i> 返回顶部</a>
+			</p>
+			<p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+			<p>
+				New to Bootstrap? <a href="#">Visit the homepage</a>
+				or read our <a href="#">getting started guide</a>.
+			</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap core JavaScript-->
+	<script src="static/uiframe/bootstrap4/js/jquery.min.js" ></script>
+	<script src="static/uiframe/bootstrap4/js/popper.min.js"></script>
+	<script src="static/uiframe/bootstrap4/js/bootstrap.min.js"></script>
+	<script src="static/uiframe/bootstrap4/js/holder.min.js"></script>
 	</body>
+	</html>
+
 </html>
