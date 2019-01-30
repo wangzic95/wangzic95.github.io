@@ -4,15 +4,19 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>个人网站</title>
+		<title>WANGZIC - 个人网站</title>
 		<link rel="icon" href="static/img/favicon.ico">
 		<link href="static/uiframe/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
-		<link href="static/uiframe/bootstrap4/examples/album/album.css" rel="stylesheet">
 		<link href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<style>
+			.text-gray{color: #777;}
+			.text-small{font-size: small;}
+			.card{border-radius: 0;}
+		</style>
 	</head>
 
 	<body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark box-shadow">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">个人网站</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sitenavbar" aria-controls="sitenavbar" aria-expanded="false" >
@@ -21,51 +25,96 @@
 
 			<div class="collapse navbar-collapse" id="sitenavbar">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link active" href="/">首页</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="html/resume.html">个人简历</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://blog.csdn.net/qq_24473141">我的博客</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">给我留言</a>
-					</li>
+					<li class="nav-item"><a class="nav-link active" href="/">动态</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://blog.csdn.net/qq_24473141">博客</a></li>
+					<li class="nav-item"><a class="nav-link" href="html/music.html">音乐</a></li>
+					<li class="nav-item"><a class="nav-link" href="html/video.html">视频</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">留言</a></li>
 				</ul>
+				<form class="form-inline">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-light my-2 my-sm-0" type="submit">搜索</button>
+				</form>
 			</div>
 		</div>
 	</nav>
 	<main role="main">
-
-		<section class="jumbotron text-center">
-			<div class="container">
-				<h1 class="jumbotron-heading">欢迎光临我的玩页面</h1>
-				<p class="lead text-muted">这里有一些本人在前端方面的积累，做的一些功能性的页面，另外还有一些有趣的页面</p>
-				<p><a href="#playone" class="btn btn-primary my-2"><i class="fa fa-lg fa-fw fa-eye"></i> 开始浏览</a>
-					<a href="javascript:addFavorite();" class="btn btn-secondary my-2"><i class="fa fa-lg fa-fw fa-star"></i> 加入收藏</a>
-				</p>
-			</div>
-		</section>
-		<div class="album py-5 bg-light">
+		<div class="py-3 bg-light">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="card mb-4 box-shadow" id="playone">
-							<a href="html/iloveu.html" target="_blank" style="height: 260px;overflow: hidden;">
-								<img class="card-img-top" src="static/img/1.jpg" alt="小姐姐我有话想对你说..">
-							</a>
+							<img class="card-img-top" src="static/img/top_bg.jpg" alt="图片">
 							<div class="card-body">
-								<p class="card-text">一个好玩的网页，发给你朋友吧</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<a href="html/iloveu.html" target="_blank" class="btn btn-sm btn-outline-secondary">浏览</a>
-									</div>
-									<small class="text-muted">9</small>
-								</div>
+								<h6 class="card-title text-center font-weight-bold">码客斯基</h6>
+								<p class="card-text text-center text-small text-gray">给自己定目标，一年，两年，五年，也许你出生不如别人好，通过努力，往往可以改变70%的命运。破罐子破摔只能和懦弱做朋友。</p>
 							</div>
 						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+								<div class="d-flex w-100 justify-content-between">
+									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
+								</div>
+								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
+								<div class="float-left text-left">
+									<span class="badge badge-primary">即时通讯</span>
+									<span class="badge badge-secondary">WebSocket</span>
+									<span class="badge badge-success">H5+APP</span>
+								</div>
+								<small class="float-right text-right">最近更新3分钟前</small>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+								<div class="d-flex w-100 justify-content-between">
+									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
+								</div>
+								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
+								<div class="float-left text-left">
+									<span class="badge badge-primary">即时通讯</span>
+									<span class="badge badge-secondary">WebSocket</span>
+									<span class="badge badge-success">H5+APP</span>
+								</div>
+								<small class="float-right text-right">最近更新3分钟前</small>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+								<div class="d-flex w-100 justify-content-between">
+									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
+								</div>
+								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
+								<div class="float-left text-left">
+									<span class="badge badge-primary">即时通讯</span>
+									<span class="badge badge-secondary">WebSocket</span>
+									<span class="badge badge-success">H5+APP</span>
+								</div>
+								<small class="float-right text-right">最近更新3分钟前</small>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+								<div class="d-flex w-100 justify-content-between">
+									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
+								</div>
+								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
+								<div class="float-left text-left">
+									<span class="badge badge-primary">即时通讯</span>
+									<span class="badge badge-secondary">WebSocket</span>
+									<span class="badge badge-success">H5+APP</span>
+								</div>
+								<small class="float-right text-right">最近更新3分钟前</small>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+								<div class="d-flex w-100 justify-content-between">
+									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
+								</div>
+								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
+								<div class="float-left text-left">
+									<span class="badge badge-primary">即时通讯</span>
+									<span class="badge badge-secondary">WebSocket</span>
+									<span class="badge badge-success">H5+APP</span>
+								</div>
+								<small class="float-right text-right">最近更新3分钟前</small>
+							</a>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -73,7 +122,7 @@
 	</main>
 
 	<footer class="text-muted">
-		<div class="container">
+		<div class="container mt-3">
 			<a href="#" class="float-right"><i class="fa fa-arrow-up fa-lg fa-fw" aria-hidden="true"></i> 返回顶部</a>
 			<p>Copyright © 2018 - UI设计@WANGZIC Bootstrap4 All Rights Reserved</p>
     		<p>Powered By WANGZIC 1.0.0 | 技术交流: 403466144@qq.com</p>
@@ -86,26 +135,9 @@
 	<script src="static/uiframe/bootstrap4/js/bootstrap.min.js"></script>
 	<script src="static/uiframe/bootstrap4/js/holder.min.js"></script>
 	<script type="text/javascript">
-        function addFavorite(){
-           	var url = window.location || 'https://wangzic95.github.io/';
-	        var title = document.title;
-	        var ua = navigator.userAgent.toLowerCase();
-	        if (ua.indexOf("360se") > -1) {
-	            alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
-	        }else if (ua.indexOf("msie 8") > -1) {
-	            window.external.AddToFavoritesBar(url, title); //IE8
-	        }else if (document.all) {
-	            try{
-	                window.external.addFavorite(url, title);
-	            }catch(e){
-	                alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
-	            }
-	        }else if (window.sidebar) {
-	            window.sidebar.addPanel(title, url, "");
-	        }else {
-	            alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
-	        }
-        }
+        $(function () {
+
+        });
 	</script>
 	</body>
 	</html>
