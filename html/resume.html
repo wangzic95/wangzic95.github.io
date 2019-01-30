@@ -11,25 +11,46 @@
 		<link href="../static/uiframe/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../static/uiframe/bootstrap4/examples/album/album.css" rel="stylesheet">
 		<link href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<style>
-			html,body{
-				height: 100%;
-				background-color: #f6f6f8;
-			}
-			.main-warpper{
-				min-height: 700px;
-				background-color: #fff;
-			}
-		</style>
+		<link href="../static/common/css/app.css" rel="stylesheet">
 	</head>
 	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-9 main-warpper" >
-
-				</div>
+			<a class="navbar-brand" href="#">个人网站</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sitenavbar" aria-controls="sitenavbar" aria-expanded="false" >
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="sitenavbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link active" href="/">动态</a></li>
+					<li class="nav-item"><a class="nav-link" href="html/blog.html">博客</a></li>
+					<li class="nav-item"><a class="nav-link" href="html/music.html">音乐</a></li>
+					<li class="nav-item"><a class="nav-link" href="html/video.html">视频</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">留言</a></li>
+					<li class="nav-item"><a class="nav-link" href="html/iloveu.html">小玩意</a></li>
+				</ul>
+				<form class="form-inline">
+					<div class="input-group">
+						<input type="search" class="form-control"  placeholder="Search" aria-label="Search">
+						<div class="input-group-append">
+							<button class="btn btn-outline-light" type="submit">搜索</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
+	</nav>
+		<main role="main">
+			<div class="py-3 bg-light">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-9 main-warpper" >
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 	</body>
 	<!-- Bootstrap core JavaScript-->
 	<script src="../static/uiframe/bootstrap4/js/jquery.min.js" ></script>

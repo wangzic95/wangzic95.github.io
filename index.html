@@ -8,32 +8,32 @@
 		<link rel="icon" href="static/img/favicon.ico">
 		<link href="static/uiframe/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
 		<link href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<style>
-			.text-gray{color: #777;}
-			.text-small{font-size: small;}
-			.card{border-radius: 0;}
-		</style>
+		<link href="static/common/css/app.css" rel="stylesheet">
 	</head>
 
 	<body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">个人网站</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sitenavbar" aria-controls="sitenavbar" aria-expanded="false" >
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
 			<div class="collapse navbar-collapse" id="sitenavbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link active" href="/">动态</a></li>
-					<li class="nav-item"><a class="nav-link" href="https://blog.csdn.net/qq_24473141">博客</a></li>
+					<li class="nav-item"><a class="nav-link" href="html/blog.html">博客</a></li>
 					<li class="nav-item"><a class="nav-link" href="html/music.html">音乐</a></li>
 					<li class="nav-item"><a class="nav-link" href="html/video.html">视频</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">留言</a></li>
+					<li class="nav-item"><a class="nav-link" href="html/iloveu.html">小玩意</a></li>
 				</ul>
 				<form class="form-inline">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-light my-2 my-sm-0" type="submit">搜索</button>
+					<div class="input-group">
+						<input type="search" class="form-control"  placeholder="Search" aria-label="Search">
+						<div class="input-group-append">
+							<button class="btn btn-outline-light" type="submit">搜索</button>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -45,76 +45,73 @@
 					<div class="col-md-3">
 						<div class="card mb-4 box-shadow" id="playone">
 							<img class="card-img-top" src="static/img/top_bg.jpg" alt="图片">
-							<div class="card-body">
-								<h6 class="card-title text-center font-weight-bold">码客斯基</h6>
-								<p class="card-text text-center text-small text-gray">给自己定目标，一年，两年，五年，也许你出生不如别人好，通过努力，往往可以改变70%的命运。破罐子破摔只能和懦弱做朋友。</p>
+							<div class="card-body text-center">
+								<img src="static/img/himg8.jpg" class="bpj">
+								<h6 class="card-title font-weight-bold">码客斯基</h6>
+								<p class="card-text text-small text-gray">想要守护的人，想要做的事，喜欢的生活方式，都是前进的动力，努力的意义</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-9">
-						<div class="list-group">
-							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-								<div class="d-flex w-100 justify-content-between">
-									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
+					<div class="col-md-6">
+						<div class="list-group box-shadow">
+							<div class="list-group-item list-group-item-action flex-column">
+								<div class="input-group">
+									<input type="text" class="form-control"  placeholder="Search" aria-label="Search">
+									<div class="input-group-append">
+										<button class="btn btn-dark" type="submit"><i class="fa fa-camera fa-lg"></i></button>
+									</div>
 								</div>
-								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
-								<div class="float-left text-left">
-									<span class="badge badge-primary">即时通讯</span>
-									<span class="badge badge-secondary">WebSocket</span>
-									<span class="badge badge-success">H5+APP</span>
+							</div>
+							<div class="list-group-item list-group-item-action flex-column align-items-start">
+								<div class="media">
+									<img class="mr-3 rounded-circle" src="static/img/himg8.jpg" alt="图片" style="height: 50px;width: 50px;">
+									<div class="media-body">
+										<div class="d-flex w-100 justify-content-between">
+											<h6 class="mb-2 font-weight-bold">码客斯基</h6><small>3分钟前</small>
+										</div>
+										<p class="mb-1 text-gray">
+											本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，
+											所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、
+											注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，
+											根据这个入口来与服务端建立tcp连接通道。根据WebSocket的API，我们要实现两个接口类HandshakeInterceptor
+											和WebSocketHandler。HandshakeInterceptor的实现类，需实现了他的两个方法beforeHandshake和afterHandshake，
+											这个两个方法是客户端与服务器初次进行握手连接的方法，初次握手连接前，连接用户会传过来其用户id，
+											当握手连接成功会用此id与这个用户的连接进行绑定，作为这个链接的唯一标识。
+										</p>
+										<div class="row">
+											<div class="col"><img src="static/img/20170701200419391.png" class="card-img-top"></div>
+											<div class="col"><img src="static/img/20170701200954326.png" class="card-img-top"></div>
+										</div>
+									</div>
 								</div>
-								<small class="float-right text-right">最近更新3分钟前</small>
-							</a>
-							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-								<div class="d-flex w-100 justify-content-between">
-									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
+							</div>
+							<div class="list-group-item list-group-item-action flex-column align-items-start">
+								<div class="media">
+									<img src="static/img/himg8.jpg" class="mr-3 rounded-circle" style="height: 50px;width: 50px;">
+									<div class="media-body">
+										<div class="d-flex w-100 justify-content-between">
+											<h6 class="mb-2 font-weight-bold">码客斯基</h6><small>3分钟前</small>
+										</div>
+										<p class="mb-1 text-gray">
+											本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，
+											所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、
+											注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，
+										</p>
+									</div>
 								</div>
-								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
-								<div class="float-left text-left">
-									<span class="badge badge-primary">即时通讯</span>
-									<span class="badge badge-secondary">WebSocket</span>
-									<span class="badge badge-success">H5+APP</span>
-								</div>
-								<small class="float-right text-right">最近更新3分钟前</small>
-							</a>
-							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-								<div class="d-flex w-100 justify-content-between">
-									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
-								</div>
-								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
-								<div class="float-left text-left">
-									<span class="badge badge-primary">即时通讯</span>
-									<span class="badge badge-secondary">WebSocket</span>
-									<span class="badge badge-success">H5+APP</span>
-								</div>
-								<small class="float-right text-right">最近更新3分钟前</small>
-							</a>
-							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-								<div class="d-flex w-100 justify-content-between">
-									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
-								</div>
-								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
-								<div class="float-left text-left">
-									<span class="badge badge-primary">即时通讯</span>
-									<span class="badge badge-secondary">WebSocket</span>
-									<span class="badge badge-success">H5+APP</span>
-								</div>
-								<small class="float-right text-right">最近更新3分钟前</small>
-							</a>
-							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-								<div class="d-flex w-100 justify-content-between">
-									<h5 class="mb-1">基于websocket协议的即时通讯webapp（摘自本人毕业论文）</h5>
-								</div>
-								<p class="mb-1 text-gray">本软件的即时通讯技术采用了WebSocket协议，因为从spring4.0的版本才开始支持WebSocket，所以本软件服务端的spring版本是4.2。第一步，先配置配置WebSocket入口，允许访问的域、注册Handler和拦截器，WebSocket的访问权限是允许所有，访问路径是/wsim.do，根据这个入口来与服务端建立tcp连接通道。</p>
-								<div class="float-left text-left">
-									<span class="badge badge-primary">即时通讯</span>
-									<span class="badge badge-secondary">WebSocket</span>
-									<span class="badge badge-success">H5+APP</span>
-								</div>
-								<small class="float-right text-right">最近更新3分钟前</small>
-							</a>
+							</div>
 						</div>
 
+					</div>
+					<div class="col-md-3 col-sm">
+						<div class="card mb-4 box-shadow" id="playone">
+							<div class="card-body">
+								<h5 class="card-title">赞助商</h5>
+								<img class="card-img-top" src="static/img/instagram_2.jpg" alt="图片">
+								<p class="card-text">可能是时候访问冰岛了。冰岛真是太冷了，这里的一切看起来都很酷。此外，我们听说人们都很好。你在等什么？</p>
+								<a href="#" class="btn btn-outline-primary">买一张票</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
