@@ -3,7 +3,7 @@
 @import "../../img/favicon.ico";
 body{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"!important;}
 @media (min-width: 1200px){.container {max-width: 1200px;}}
-@media (max-width: 576px){.container {padding: 0;}}
+@media (max-width: 768px){.container {padding: 0;}}
 .text-gray{color: #777;font-size: 14px;}
 .text-small{font-size: small;}
 .card{border-radius: 0;}
